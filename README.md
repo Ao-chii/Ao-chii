@@ -28,8 +28,8 @@ Here are some ideas to get you started:
 
 <!-- Fancy Social Links -->
 <div align="center">
-  <a href="https://space.bilibili.com/496526187?spm_id_from=333.788.0.0Z">
-    <img src="https://img.shields.io/badge/Bilibili-哔哩哔哩-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white"/>
+  <a href="https://bangumi.tv/user/964582">
+    <img src="https://img.shields.io/badge/Bangumi-番组计划-FF69B4?style=for-the-badge&logo=bilibili&logoColor=white"/>
   </a>
   <a href="mailto:2543327978@qq.com">
     <img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
@@ -43,7 +43,7 @@ Here are some ideas to get you started:
 </h3>
 
 <div align="center">
-  <img  src="https://github-readme-stats.vercel.app/api?username=Ao-chii&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117&title_color=00A1D6&icon_color=00A1D6" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Ao-chii&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117&title_color=00A1D6&icon_color=00A1D6" alt="Ao-chii's GitHub Stats"/>
 </div>
 
 <div align="center">
@@ -90,7 +90,7 @@ Here are some ideas to get you started:
 <div align="center">
   <img src="https://img.shields.io/badge/性格-NULL-00A1D6?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/爱好-ACG-FF69B4?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />  
+  <img src="https://img.shields.io/badge/AI/llm-FF0000?style=for-the-badge&logo=bangumi&logoColor=white" />  
   <img src="https://img.shields.io/badge/Bilibili-FF69B4?style=for-the-badge&logo=bilibili&logoColor=white" />
 </div>
 
