@@ -28,9 +28,7 @@ Here are some ideas to get you started:
 
 <!-- Fancy Social Links -->
 <div align="center">
-  <a href="https://bangumi.tv/user/964582">
-    <img src="https://img.shields.io/badge/Bangumi-番组计划-FF69B4?style=for-the-badge&logo=bilibili&logoColor=white"/>
-  </a>
+
   <a href="mailto:2543327978@qq.com">
     <img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
