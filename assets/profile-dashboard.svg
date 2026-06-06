@@ -1,0 +1,76 @@
+<svg width="980" height="260" viewBox="0 0 980 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    <title id="title">AO-CHII profile dashboard</title>
+    <desc id="desc">Self-generated GitHub profile statistics and language distribution.</desc>
+    <rect width="980" height="260" fill="#0d0d0d" />
+    <polygon points="0,0 424,0 364,72 0,88" fill="#d92323" />
+    <polygon points="760,0 980,0 980,260 684,260" fill="#732424" opacity="0.7" />
+    <polygon points="418,0 586,0 494,260 326,260" fill="#050505" />
+    <polygon points="418,0 442,0 350,260 326,260" fill="#ffffff" opacity="0.92" />
+    <polygon points="442,0 458,0 366,260 350,260" fill="#d92323" />
+    <polygon points="560,0 586,0 494,260 468,260" fill="#732424" opacity="0.85" />
+    <path d="M-30 220L220 -20M728 292L1014 -22" stroke="#ffffff" stroke-width="10" opacity="0.11" />
+    <g opacity="0.95">
+      <polygon points="444,48 488,44 484,54 440,58" fill="#d92323" />
+      <polygon points="428,82 472,78 468,88 424,92" fill="#ffffff" />
+      <polygon points="414,116 458,112 454,122 410,126" fill="#d92323" />
+      <polygon points="400,150 444,146 440,156 396,160" fill="#ffffff" />
+      <polygon points="386,184 430,180 426,190 382,194" fill="#d92323" />
+    </g>
+    <path d="M462 20L368 250" stroke="#0d0d0d" stroke-width="7" opacity="0.85" />
+    <text x="32" y="45" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="900">PROFILE DOSSIER</text>
+    <text x="506" y="45" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="900">LANGUAGE MIX</text>
+    
+    <g transform="translate(34,82)">
+      <polygon points="0,0 162,-5 154,49 -8,55" fill="#111111" stroke="#732424" stroke-width="2" />
+      <text x="12" y="18" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="11" font-weight="900">REPOS</text>
+      <text x="12" y="43" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="25" font-weight="900">10</text>
+    </g>
+    <g transform="translate(219,82)">
+      <polygon points="0,0 162,-5 154,49 -8,55" fill="#111111" stroke="#732424" stroke-width="2" />
+      <text x="12" y="18" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="11" font-weight="900">ACTIVE 12M</text>
+      <text x="12" y="43" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="25" font-weight="900">9</text>
+    </g>
+    <g transform="translate(34,150)">
+      <polygon points="0,0 162,-5 154,49 -8,55" fill="#111111" stroke="#732424" stroke-width="2" />
+      <text x="12" y="18" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="11" font-weight="900">STARS</text>
+      <text x="12" y="43" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="25" font-weight="900">3</text>
+    </g>
+    <g transform="translate(219,150)">
+      <polygon points="0,0 162,-5 154,49 -8,55" fill="#111111" stroke="#732424" stroke-width="2" />
+      <text x="12" y="18" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="11" font-weight="900">TOP LANG</text>
+      <text x="12" y="43" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="25" font-weight="900">PYTHON</text>
+    </g>
+    <rect x="506" y="88" width="420" height="18" fill="#111111" stroke="#732424" stroke-width="2" />
+    <rect x="506.0" y="88" width="230.8" height="18" fill="#d92323" /><rect x="736.8" y="88" width="134.6" height="18" fill="#ffffff" /><rect x="871.4" y="88" width="37.6" height="18" fill="#732424" /><rect x="909.0" y="88" width="15.4" height="18" fill="#7b7b7b" /><rect x="924.4" y="88" width="1.6" height="18" fill="#ff5555" />
+    
+    <g transform="translate(506,120)">
+      <polygon points="0,0 420,-6 412,32 -8,38" fill="#151515" stroke="#732424" stroke-width="2" />
+      <rect x="14" y="10" width="13" height="13" fill="#d92323" stroke="#d92323" stroke-width="1.5" />
+      <text x="38" y="24" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="19" font-weight="900">PYTHON</text>
+      <text x="400" y="24" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="16" font-weight="900" text-anchor="end">55.0%</text>
+    </g>
+    <g transform="translate(506,166)">
+      <polygon points="0,0 202,-6 194,32 -8,38" fill="#111111" stroke="#732424" stroke-width="2" />
+      <rect x="14" y="9" width="10" height="10" fill="#ffffff" stroke="#7b7b7b" stroke-width="1.5" />
+      <text x="31" y="21" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">VUE</text>
+      <text x="182" y="21" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">32.0%</text>
+    </g>
+    <g transform="translate(721,166)">
+      <polygon points="0,0 202,-6 194,32 -8,38" fill="#111111" stroke="#732424" stroke-width="2" />
+      <rect x="14" y="9" width="10" height="10" fill="#732424" stroke="#732424" stroke-width="1.5" />
+      <text x="31" y="21" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">JAVA</text>
+      <text x="182" y="21" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">9.0%</text>
+    </g>
+    <g transform="translate(506,208)">
+      <polygon points="0,0 202,-6 194,32 -8,38" fill="#111111" stroke="#732424" stroke-width="2" />
+      <rect x="14" y="9" width="10" height="10" fill="#7b7b7b" stroke="#7b7b7b" stroke-width="1.5" />
+      <text x="31" y="21" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">TS</text>
+      <text x="182" y="21" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">3.7%</text>
+    </g>
+    <g transform="translate(721,208)">
+      <polygon points="0,0 202,-6 194,32 -8,38" fill="#111111" stroke="#732424" stroke-width="2" />
+      <rect x="14" y="9" width="10" height="10" fill="#ff5555" stroke="#ff5555" stroke-width="1.5" />
+      <text x="31" y="21" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">OTHER</text>
+      <text x="182" y="21" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">0.4%</text>
+    </g>
+  </svg>

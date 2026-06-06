@@ -103,22 +103,44 @@ function renderStatsCard(repos, topLangs) {
   </svg>`;
 }
 
-function renderLanguageCard(topLangs, totalLangBytes) {
-  const colors = ["#d92323", "#ffffff", "#732424", "#7b7b7b", "#ff5555", "#bdbdbd"];
+function shortLanguageName(name) {
+  return ({
+    TypeScript: "TS",
+    JavaScript: "JS",
+    Dockerfile: "Docker",
+  }[name] || name);
+}
+
+function renderLanguageCard(langs, totalLangBytes) {
+  const colors = ["#d92323", "#ffffff", "#732424", "#7b7b7b", "#ff5555"];
+  const topLangs = langs.slice(0, 4);
+  const otherBytes = langs.slice(4).reduce((sum, lang) => sum + lang.bytes, 0);
+  const displayLangs = otherBytes > 0
+    ? [...topLangs, { name: "Other", bytes: otherBytes }]
+    : topLangs;
+
   let cursor = 32;
-  const segments = topLangs.map((lang, index) => {
+  const segments = displayLangs.map((lang, index) => {
     const width = (lang.bytes / Math.max(totalLangBytes, 1)) * 431;
     const segment = `<rect x="${cursor.toFixed(1)}" y="66" width="${width.toFixed(1)}" height="15" fill="${colors[index % colors.length]}" />`;
     cursor += width;
     return segment;
   }).join("");
 
-  const rows = topLangs.map((lang, index) => `
-    <g transform="translate(34,${104 + index * 18})">
-      <rect x="0" y="-9" width="10" height="10" fill="${colors[index % colors.length]}" />
-      <text x="18" y="0" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="700">${esc(lang.name)}</text>
-      <text x="392" y="0" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">${pct(lang.bytes, totalLangBytes)}</text>
-    </g>`).join("");
+  const rows = displayLangs.map((lang, index) => {
+    const x = index % 2 === 0 ? 34 : 260;
+    const y = 96 + Math.floor(index / 2) * 32;
+    const color = colors[index % colors.length];
+    const swatchStroke = color === "#ffffff" ? "#7b7b7b" : color;
+
+    return `
+    <g transform="translate(${x},${y})">
+      <polygon points="0,0 200,-5 194,26 -6,31" fill="#111111" stroke="#732424" stroke-width="2" />
+      <rect x="12" y="8" width="10" height="10" fill="${color}" stroke="${swatchStroke}" stroke-width="1.5" />
+      <text x="32" y="19" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">${esc(shortLanguageName(lang.name).toUpperCase())}</text>
+      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">${pct(lang.bytes, totalLangBytes)}</text>
+    </g>`;
+  }).join("");
 
   return `<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
     <title id="title">AO-CHII language mix</title>
@@ -131,13 +153,97 @@ function renderLanguageCard(topLangs, totalLangBytes) {
     <rect x="32" y="66" width="431" height="15" fill="#111111" stroke="#732424" stroke-width="2" />
     ${segments}
     ${rows || `<text x="34" y="112" fill="#7b7b7b" font-family="Arial, sans-serif" font-size="13">No language data found.</text>`}
-    <text x="34" y="180" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="10" font-weight="900">PUBLIC NON-FORK REPOS / GITHUB LINGUIST BYTES</text>
+  </svg>`;
+}
+
+function renderDashboard(repos, langs, totalLangBytes) {
+  const totalStars = repos.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0);
+  const oneYearAgo = Date.now() - 365 * 24 * 60 * 60 * 1000;
+  const activeRepos = repos.filter((repo) => new Date(repo.pushed_at || 0).getTime() >= oneYearAgo).length;
+  const colors = ["#d92323", "#ffffff", "#732424", "#7b7b7b", "#ff5555"];
+  const topLangs = langs.slice(0, 4);
+  const otherBytes = langs.slice(4).reduce((sum, lang) => sum + lang.bytes, 0);
+  const displayLangs = otherBytes > 0
+    ? [...topLangs, { name: "Other", bytes: otherBytes }]
+    : topLangs;
+
+  const dossierItems = [
+    ["REPOS", formatNumber(repos.length)],
+    ["ACTIVE 12M", formatNumber(activeRepos)],
+    ["STARS", formatNumber(totalStars)],
+    ["TOP LANG", shortLanguageName(langs[0]?.name || "N/A").toUpperCase()],
+  ];
+
+  const dossier = dossierItems.map(([label, value], index) => {
+    const x = 34 + (index % 2) * 185;
+    const y = 82 + Math.floor(index / 2) * 68;
+    return `
+    <g transform="translate(${x},${y})">
+      <polygon points="0,0 162,-5 154,49 -8,55" fill="#111111" stroke="#732424" stroke-width="2" />
+      <text x="12" y="18" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="11" font-weight="900">${esc(label)}</text>
+      <text x="12" y="43" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="25" font-weight="900">${esc(value)}</text>
+    </g>`;
+  }).join("");
+
+  let cursor = 506;
+  const segments = displayLangs.map((lang, index) => {
+    const width = (lang.bytes / Math.max(totalLangBytes, 1)) * 420;
+    const segment = `<rect x="${cursor.toFixed(1)}" y="88" width="${width.toFixed(1)}" height="18" fill="${colors[index % colors.length]}" />`;
+    cursor += width;
+    return segment;
+  }).join("");
+
+  const languageChips = displayLangs.map((lang, index) => {
+    const major = index === 0;
+    const x = major ? 506 : 506 + ((index - 1) % 2) * 215;
+    const y = major ? 120 : 166 + Math.floor((index - 1) / 2) * 42;
+    const width = major ? 420 : 202;
+    const color = colors[index % colors.length];
+    const swatchStroke = color === "#ffffff" ? "#7b7b7b" : color;
+    const name = esc(shortLanguageName(lang.name).toUpperCase());
+    const percent = pct(lang.bytes, totalLangBytes);
+
+    return `
+    <g transform="translate(${x},${y})">
+      <polygon points="0,0 ${width},-6 ${width - 8},32 -8,38" fill="${major ? "#151515" : "#111111"}" stroke="#732424" stroke-width="2" />
+      <rect x="14" y="${major ? 10 : 9}" width="${major ? 13 : 10}" height="${major ? 13 : 10}" fill="${color}" stroke="${swatchStroke}" stroke-width="1.5" />
+      <text x="${major ? 38 : 31}" y="${major ? 24 : 21}" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="${major ? 19 : 13}" font-weight="900">${name}</text>
+      <text x="${width - 20}" y="${major ? 24 : 21}" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="${major ? 16 : 12}" font-weight="900" text-anchor="end">${percent}</text>
+    </g>`;
+  }).join("");
+
+  return `<svg width="980" height="260" viewBox="0 0 980 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    <title id="title">AO-CHII profile dashboard</title>
+    <desc id="desc">Self-generated GitHub profile statistics and language distribution.</desc>
+    <rect width="980" height="260" fill="#0d0d0d" />
+    <polygon points="0,0 424,0 364,72 0,88" fill="#d92323" />
+    <polygon points="760,0 980,0 980,260 684,260" fill="#732424" opacity="0.7" />
+    <polygon points="418,0 586,0 494,260 326,260" fill="#050505" />
+    <polygon points="418,0 442,0 350,260 326,260" fill="#ffffff" opacity="0.92" />
+    <polygon points="442,0 458,0 366,260 350,260" fill="#d92323" />
+    <polygon points="560,0 586,0 494,260 468,260" fill="#732424" opacity="0.85" />
+    <path d="M-30 220L220 -20M728 292L1014 -22" stroke="#ffffff" stroke-width="10" opacity="0.11" />
+    <g opacity="0.95">
+      <polygon points="444,48 488,44 484,54 440,58" fill="#d92323" />
+      <polygon points="428,82 472,78 468,88 424,92" fill="#ffffff" />
+      <polygon points="414,116 458,112 454,122 410,126" fill="#d92323" />
+      <polygon points="400,150 444,146 440,156 396,160" fill="#ffffff" />
+      <polygon points="386,184 430,180 426,190 382,194" fill="#d92323" />
+    </g>
+    <path d="M462 20L368 250" stroke="#0d0d0d" stroke-width="7" opacity="0.85" />
+    <text x="32" y="45" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="900">PROFILE DOSSIER</text>
+    <text x="506" y="45" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="900">LANGUAGE MIX</text>
+    ${dossier}
+    <rect x="506" y="88" width="420" height="18" fill="#111111" stroke="#732424" stroke-width="2" />
+    ${segments}
+    ${languageChips || `<text x="506" y="144" fill="#7b7b7b" font-family="Arial, sans-serif" font-size="14">No language data found.</text>`}
   </svg>`;
 }
 
 async function main() {
   const repos = await listOwnerRepos();
   const languages = new Map();
+  const failedRepos = [];
 
   for (const repo of repos) {
     try {
@@ -147,17 +253,23 @@ async function main() {
       }
     } catch (error) {
       console.warn(`Skipped ${repo.name}: ${error.message}`);
+      failedRepos.push(repo.name);
     }
   }
 
+  if (failedRepos.length > 0) {
+    throw new Error(`Language generation aborted. Failed repos: ${failedRepos.join(", ")}`);
+  }
+
   const totalLangBytes = [...languages.values()].reduce((sum, bytes) => sum + bytes, 0);
-  const topLangs = [...languages.entries()]
+  const sortedLangs = [...languages.entries()]
     .map(([name, bytes]) => ({ name, bytes }))
-    .sort((a, b) => b.bytes - a.bytes)
-    .slice(0, 6);
+    .sort((a, b) => b.bytes - a.bytes);
+  const topLangs = sortedLangs.slice(0, 6);
 
   fs.writeFileSync(path.join(outDir, "profile-stats.svg"), renderStatsCard(repos, topLangs).trim());
-  fs.writeFileSync(path.join(outDir, "profile-langs.svg"), renderLanguageCard(topLangs, totalLangBytes).trim());
+  fs.writeFileSync(path.join(outDir, "profile-langs.svg"), renderLanguageCard(sortedLangs, totalLangBytes).trim());
+  fs.writeFileSync(path.join(outDir, "profile-dashboard.svg"), renderDashboard(repos, sortedLangs, totalLangBytes).trim());
 
   console.log(`Generated profile cards for ${repos.length} public non-fork repositories.`);
   console.log(topLangs.map((lang) => `${lang.name} ${pct(lang.bytes, totalLangBytes)}`).join(", "));
