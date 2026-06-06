@@ -4,7 +4,7 @@ const path = require("path");
 const owner = process.env.PROFILE_OWNER;
 const token = process.env.GITHUB_TOKEN;
 const workspace = process.env.GITHUB_WORKSPACE || process.cwd();
-const outDir = path.join(workspace, "dist");
+const outDir = process.env.PROFILE_STATS_OUT_DIR || path.join(workspace, "dist");
 
 if (!owner) {
   throw new Error("PROFILE_OWNER is required");

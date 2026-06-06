@@ -47,8 +47,8 @@
 </p>
 
 <p align="center">
-  <img height="165" alt="Ao-chii 的 GitHub 数据" src="https://raw.githubusercontent.com/Ao-chii/Ao-chii/output/profile-stats.svg?v=3" />
-  <img height="165" alt="Ao-chii 的常用语言" src="https://raw.githubusercontent.com/Ao-chii/Ao-chii/output/profile-langs.svg?v=3" />
+  <img height="165" alt="Ao-chii 的 GitHub 数据" src="./assets/profile-stats.svg" />
+  <img height="165" alt="Ao-chii 的常用语言" src="./assets/profile-langs.svg" />
 </p>
 
 <p align="center">

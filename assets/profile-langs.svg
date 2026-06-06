@@ -1,0 +1,43 @@
+<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    <title id="title">AO-CHII language mix</title>
+    <desc id="desc">Self-generated language distribution from GitHub Linguist byte counts.</desc>
+    <rect width="495" height="195" fill="#0d0d0d" />
+    <polygon points="0,0 260,0 220,58 0,74" fill="#d92323" />
+    <polygon points="386,0 495,0 495,195 332,195" fill="#732424" opacity="0.7" />
+    <path d="M-20 160L190 -20M390 214L520 20" stroke="#ffffff" stroke-width="8" opacity="0.11" />
+    <text x="24" y="38" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="24" font-weight="900">LANGUAGE MIX</text>
+    <rect x="32" y="66" width="431" height="15" fill="#111111" stroke="#732424" stroke-width="2" />
+    <rect x="32.0" y="66" width="236.9" height="15" fill="#d92323" /><rect x="268.9" y="66" width="138.1" height="15" fill="#ffffff" /><rect x="407.0" y="66" width="38.6" height="15" fill="#732424" /><rect x="445.6" y="66" width="15.8" height="15" fill="#7b7b7b" /><rect x="461.3" y="66" width="1.1" height="15" fill="#ff5555" /><rect x="462.4" y="66" width="0.4" height="15" fill="#bdbdbd" />
+    
+    <g transform="translate(34,104)">
+      <rect x="0" y="-9" width="10" height="10" fill="#d92323" />
+      <text x="18" y="0" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="700">Python</text>
+      <text x="392" y="0" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">55.0%</text>
+    </g>
+    <g transform="translate(34,122)">
+      <rect x="0" y="-9" width="10" height="10" fill="#ffffff" />
+      <text x="18" y="0" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="700">Vue</text>
+      <text x="392" y="0" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">32.0%</text>
+    </g>
+    <g transform="translate(34,140)">
+      <rect x="0" y="-9" width="10" height="10" fill="#732424" />
+      <text x="18" y="0" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="700">Java</text>
+      <text x="392" y="0" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">9.0%</text>
+    </g>
+    <g transform="translate(34,158)">
+      <rect x="0" y="-9" width="10" height="10" fill="#7b7b7b" />
+      <text x="18" y="0" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="700">TypeScript</text>
+      <text x="392" y="0" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">3.7%</text>
+    </g>
+    <g transform="translate(34,176)">
+      <rect x="0" y="-9" width="10" height="10" fill="#ff5555" />
+      <text x="18" y="0" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="700">JavaScript</text>
+      <text x="392" y="0" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">0.2%</text>
+    </g>
+    <g transform="translate(34,194)">
+      <rect x="0" y="-9" width="10" height="10" fill="#bdbdbd" />
+      <text x="18" y="0" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="700">HTML</text>
+      <text x="392" y="0" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">0.1%</text>
+    </g>
+    <text x="34" y="180" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="10" font-weight="900">PUBLIC NON-FORK REPOS / GITHUB LINGUIST BYTES</text>
+  </svg>
