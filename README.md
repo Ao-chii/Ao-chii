@@ -47,15 +47,15 @@
 </p>
 
 <p align="center">
-  <img width="65%" alt="Ao-chii 的 GitHub 数据概览" src="./assets/profile-dashboard.svg" />
+  <img width="80%" alt="Ao-chii 的 GitHub 数据概览" src="./assets/profile-dashboard.svg" />
 </p>
 
 <p align="center">
-  <img width="65%" alt="连续提交" src="https://streak-stats.demolab.com?user=Ao-chii&hide_border=true&background=0A0A0A&border=5C0000&stroke=E60012&ring=E60012&fire=E60012&currStreakNum=F2F2F2&sideNums=F2F2F2&currStreakLabel=E60012&sideLabels=C9C9C9&dates=7B7B7B" />
+  <img width="80%" alt="连续提交" src="https://streak-stats.demolab.com?user=Ao-chii&hide_border=true&background=0A0A0A&border=5C0000&stroke=E60012&ring=E60012&fire=E60012&currStreakNum=F2F2F2&sideNums=F2F2F2&currStreakLabel=E60012&sideLabels=C9C9C9&dates=7B7B7B" />
 </p>
 
 <p align="center">
-  <img width="65%" alt="贡献活动曲线" src="https://github-readme-activity-graph.vercel.app/graph?username=Ao-chii&bg_color=0A0A0A&color=E60012&line=E60012&point=F2F2F2&area=true&hide_border=true" />
+  <img width="80%" alt="贡献活动曲线" src="https://github-readme-activity-graph.vercel.app/graph?username=Ao-chii&bg_color=0A0A0A&color=E60012&line=E60012&point=F2F2F2&area=true&hide_border=true" />
 </p>
 
 <p align="center">
