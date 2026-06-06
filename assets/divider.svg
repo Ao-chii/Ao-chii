@@ -1,0 +1,16 @@
+<svg width="1200" height="40" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="section divider">
+  <!-- 从左横向展开 -->
+  <g>
+    <animateTransform attributeName="transform" attributeType="XML" type="scale"
+      values="0 1;1 1" keyTimes="0;1" dur="0.6s"
+      calcMode="spline" keySplines="0.15 0.85 0.2 1" fill="freeze" />
+    <!-- 暗红影 -->
+    <polygon points="0,18 1200,18 1200,38 0,34" fill="#5c0000" />
+    <!-- 主红锯齿带 -->
+    <polygon points="0,14 150,8 300,16 450,8 600,16 750,8 900,16 1050,8 1200,14 1200,30 1050,26 900,34 750,26 600,34 450,26 300,34 150,26 0,30" fill="#e60012" />
+    <!-- 上缘白细线 -->
+    <rect x="0" y="2" width="1200" height="2.4" fill="#f2f2f2" opacity="0.45" />
+    <!-- 左端白菱标记 -->
+    <polygon points="14,8 20,19 14,30 8,19" fill="#f2f2f2" />
+  </g>
+</svg>
