@@ -44,16 +44,14 @@ jobs:
 
           const owner = process.env.PROFILE_OWNER;
           const token = process.env.GITHUB_TOKEN;
-          const outDir = path.join(process.env.GITHUB_WORKSPACE, "dist");
+          const workspace = process.env.GITHUB_WORKSPACE || process.cwd();
+          const outDir = path.join(workspace, "dist");
           fs.mkdirSync(outDir, { recursive: true });
 
-          const headers = {
+          const baseHeaders = {
             "Accept": "application/vnd.github+json",
             "User-Agent": "ao-chii-profile-readme",
           };
-          if (token) {
-            headers.Authorization = `Bearer ${token}`;
-          }
 
           const esc = (value) => String(value).replace(/[&<>"']/g, (char) => ({
             "&": "&amp;",
@@ -67,12 +65,31 @@ jobs:
           const pct = (value, total) => total ? `${((value / total) * 100).toFixed(1)}%` : "0.0%";
 
           async function requestJson(url) {
-            const response = await fetch(url, { headers });
-            if (!response.ok) {
+            const attempts = token ? [true, false] : [false];
+            let lastError = "";
+
+            for (const useToken of attempts) {
+              const headers = { ...baseHeaders };
+              if (useToken) {
+                headers.Authorization = `Bearer ${token}`;
+              }
+
+              const response = await fetch(url, { headers });
+              if (response.ok) {
+                return response.json();
+              }
+
               const body = await response.text();
-              throw new Error(`${response.status} ${response.statusText}: ${url}\n${body}`);
+              lastError = `${response.status} ${response.statusText}: ${url}\n${body}`;
+              if (useToken && (response.status === 401 || response.status === 403)) {
+                console.warn(`Retrying without GITHUB_TOKEN: ${url}`);
+                continue;
+              }
+
+              throw new Error(lastError);
             }
-            return response.json();
+
+            throw new Error(lastError);
           }
 
           async function listOwnerRepos() {
