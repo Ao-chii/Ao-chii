@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Anton&size=30&duration=2800&pause=700&color=E60012&background=00000000&center=true&vCenter=true&width=820&height=60&lines=STEAL+THE+NOISE;SHIP+THE+SIGNAL;TAKE+YOUR+HEART" alt="标语" />
+  <img src="https://readme-typing-svg.demolab.com?font=Anton&amp;size=30&amp;duration=2800&amp;pause=700&amp;color=E60012&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=820&amp;height=60&amp;lines=STEAL+THE+NOISE;SHIP+THE+SIGNAL;TAKE+YOUR+HEART" alt="标语" />
 </p>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
@@ -27,17 +27,17 @@
 </p>
 
 <p align="center">
-  <img alt="Java" src="https://img.shields.io/badge/Java-0A0A0A?style=for-the-badge&logo=openjdk&logoColor=F2F2F2&labelColor=E60012" />
-  <img alt="Python" src="https://img.shields.io/badge/Python-0A0A0A?style=for-the-badge&logo=python&logoColor=F2F2F2&labelColor=E60012" />
-  <img alt="C" src="https://img.shields.io/badge/C-0A0A0A?style=for-the-badge&logo=c&logoColor=F2F2F2&labelColor=E60012" />
-  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-0A0A0A?style=for-the-badge&logo=cplusplus&logoColor=F2F2F2&labelColor=E60012" />
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-0A0A0A?style=for-the-badge&logo=javascript&logoColor=F2F2F2&labelColor=E60012" />
+  <img alt="Java" src="https://img.shields.io/badge/Java-0A0A0A?style=for-the-badge&amp;logo=openjdk&amp;logoColor=F2F2F2&amp;labelColor=E60012" />
+  <img alt="Python" src="https://img.shields.io/badge/Python-0A0A0A?style=for-the-badge&amp;logo=python&amp;logoColor=F2F2F2&amp;labelColor=E60012" />
+  <img alt="C" src="https://img.shields.io/badge/C-0A0A0A?style=for-the-badge&amp;logo=c&amp;logoColor=F2F2F2&amp;labelColor=E60012" />
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-0A0A0A?style=for-the-badge&amp;logo=cplusplus&amp;logoColor=F2F2F2&amp;labelColor=E60012" />
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-0A0A0A?style=for-the-badge&amp;logo=javascript&amp;logoColor=F2F2F2&amp;labelColor=E60012" />
 </p>
 
 <p align="center">
-  <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-0A0A0A?style=for-the-badge&logo=vuedotjs&logoColor=F2F2F2&labelColor=E60012" />
-  <img alt="Git" src="https://img.shields.io/badge/Git-0A0A0A?style=for-the-badge&logo=git&logoColor=F2F2F2&labelColor=E60012" />
-  <img alt="Linux" src="https://img.shields.io/badge/Linux-0A0A0A?style=for-the-badge&logo=linux&logoColor=F2F2F2&labelColor=E60012" />
+  <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-0A0A0A?style=for-the-badge&amp;logo=vuedotjs&amp;logoColor=F2F2F2&amp;labelColor=E60012" />
+  <img alt="Git" src="https://img.shields.io/badge/Git-0A0A0A?style=for-the-badge&amp;logo=git&amp;logoColor=F2F2F2&amp;labelColor=E60012" />
+  <img alt="Linux" src="https://img.shields.io/badge/Linux-0A0A0A?style=for-the-badge&amp;logo=linux&amp;logoColor=F2F2F2&amp;labelColor=E60012" />
 </p>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
@@ -47,23 +47,23 @@
 </p>
 
 <p align="center">
-  <img height="165" alt="Ao-chii 的 GitHub 数据" src="https://github-readme-stats.vercel.app/api?username=Ao-chii&show_icons=true&hide_border=true&count_private=true&title_color=E60012&icon_color=E60012&text_color=C9C9C9&bg_color=0A0A0A" />
-  <img height="165" alt="Ao-chii 的常用语言" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ao-chii&layout=compact&hide_border=true&title_color=E60012&text_color=C9C9C9&bg_color=0A0A0A" />
+  <img height="165" alt="Ao-chii 的 GitHub 数据" src="https://raw.githubusercontent.com/Ao-chii/Ao-chii/output/profile-stats.svg?v=3" />
+  <img height="165" alt="Ao-chii 的常用语言" src="https://raw.githubusercontent.com/Ao-chii/Ao-chii/output/profile-langs.svg?v=3" />
 </p>
 
 <p align="center">
-  <img alt="连续提交" src="https://streak-stats.demolab.com?user=Ao-chii&hide_border=true&background=0A0A0A&border=5C0000&stroke=E60012&ring=E60012&fire=E60012&currStreakNum=F2F2F2&sideNums=F2F2F2&currStreakLabel=E60012&sideLabels=C9C9C9&dates=7B7B7B" />
+  <img alt="连续提交" src="https://streak-stats.demolab.com?user=Ao-chii&amp;hide_border=true&amp;background=0A0A0A&amp;border=5C0000&amp;stroke=E60012&amp;ring=E60012&amp;fire=E60012&amp;currStreakNum=F2F2F2&amp;sideNums=F2F2F2&amp;currStreakLabel=E60012&amp;sideLabels=C9C9C9&amp;dates=7B7B7B" />
 </p>
 
 <p align="center">
-  <img width="98%" alt="贡献活动曲线" src="https://github-readme-activity-graph.vercel.app/graph?username=Ao-chii&bg_color=0A0A0A&color=E60012&line=E60012&point=F2F2F2&area=true&hide_border=true" />
+  <img width="98%" alt="贡献活动曲线" src="https://github-readme-activity-graph.vercel.app/graph?username=Ao-chii&amp;bg_color=0A0A0A&amp;color=E60012&amp;line=E60012&amp;point=F2F2F2&amp;area=true&amp;hide_border=true" />
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ao-chii/Ao-chii/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ao-chii/Ao-chii/output/github-contribution-grid-snake.svg" />
-    <img alt="贪吃蛇贡献图" src="https://raw.githubusercontent.com/Ao-chii/Ao-chii/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ao-chii/Ao-chii/output/github-contribution-grid-snake-dark.svg?v=2" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ao-chii/Ao-chii/output/github-contribution-grid-snake.svg?v=2" />
+    <img alt="贪吃蛇贡献图" src="https://raw.githubusercontent.com/Ao-chii/Ao-chii/output/github-contribution-grid-snake.svg?v=2" />
   </picture>
 </p>
 
@@ -75,10 +75,10 @@
 
 <p align="center">
   <a href="mailto:2543327978@qq.com">
-    <img alt="Email" src="https://img.shields.io/badge/Email-2543327978%40qq.com-0A0A0A?style=for-the-badge&logo=gmail&logoColor=F2F2F2&labelColor=E60012" />
+    <img alt="Email" src="https://img.shields.io/badge/Email-2543327978%40qq.com-0A0A0A?style=for-the-badge&amp;logo=gmail&amp;logoColor=F2F2F2&amp;labelColor=E60012" />
   </a>
   <a href="https://github.com/Ao-chii">
-    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-Ao--chii-0A0A0A?style=for-the-badge&logo=github&logoColor=F2F2F2&labelColor=E60012" />
+    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-Ao--chii-0A0A0A?style=for-the-badge&amp;logo=github&amp;logoColor=F2F2F2&amp;labelColor=E60012" />
   </a>
 </p>
 
