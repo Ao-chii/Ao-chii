@@ -160,7 +160,7 @@ function renderDashboard(repos, langs, totalLangBytes) {
   const totalStars = repos.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0);
   const oneYearAgo = Date.now() - 365 * 24 * 60 * 60 * 1000;
   const activeRepos = repos.filter((repo) => new Date(repo.pushed_at || 0).getTime() >= oneYearAgo).length;
-  const colors = ["#d92323", "#ffffff", "#732424", "#7b7b7b", "#ff5555"];
+  const colors = ["#e60012", "#f2f2f2", "#8a0a14", "#7b7b7b", "#ff5555"];
   const topLangs = langs.slice(0, 4);
   const otherBytes = langs.slice(4).reduce((sum, lang) => sum + lang.bytes, 0);
   const displayLangs = otherBytes > 0
@@ -179,9 +179,9 @@ function renderDashboard(repos, langs, totalLangBytes) {
     const y = 82 + Math.floor(index / 2) * 68;
     return `
     <g transform="translate(${x},${y})">
-      <polygon points="0,0 162,-5 154,49 -8,55" fill="#111111" stroke="#732424" stroke-width="2" />
+      <polygon points="0,0 162,-5 154,49 -8,55" fill="#111111" stroke="#8a0a14" stroke-width="2" />
       <text x="12" y="18" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="11" font-weight="900">${esc(label)}</text>
-      <text x="12" y="43" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="25" font-weight="900">${esc(value)}</text>
+      <text x="12" y="43" fill="#f2f2f2" font-family="Arial Black, Impact, sans-serif" font-size="25" font-weight="900">${esc(value)}</text>
     </g>`;
   }).join("");
 
@@ -205,9 +205,9 @@ function renderDashboard(repos, langs, totalLangBytes) {
 
     return `
     <g transform="translate(${x},${y})">
-      <polygon points="0,0 ${width},-6 ${width - 8},32 -8,38" fill="${major ? "#151515" : "#111111"}" stroke="#732424" stroke-width="2" />
+      <polygon points="0,0 ${width},-6 ${width - 8},32 -8,38" fill="${major ? "#151515" : "#111111"}" stroke="#8a0a14" stroke-width="2" />
       <rect x="14" y="${major ? 10 : 9}" width="${major ? 13 : 10}" height="${major ? 13 : 10}" fill="${color}" stroke="${swatchStroke}" stroke-width="1.5" />
-      <text x="${major ? 38 : 31}" y="${major ? 24 : 21}" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="${major ? 19 : 13}" font-weight="900">${name}</text>
+      <text x="${major ? 38 : 31}" y="${major ? 24 : 21}" fill="#f2f2f2" font-family="Arial Black, Impact, sans-serif" font-size="${major ? 19 : 13}" font-weight="900">${name}</text>
       <text x="${width - 20}" y="${major ? 24 : 21}" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="${major ? 16 : 12}" font-weight="900" text-anchor="end">${percent}</text>
     </g>`;
   }).join("");
@@ -215,28 +215,30 @@ function renderDashboard(repos, langs, totalLangBytes) {
   return `<svg width="980" height="260" viewBox="0 0 980 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
     <title id="title">AO-CHII profile dashboard</title>
     <desc id="desc">Self-generated GitHub profile statistics and language distribution.</desc>
-    <rect width="980" height="260" fill="#0d0d0d" />
-    <polygon points="0,0 424,0 364,72 0,88" fill="#d92323" />
-    <polygon points="760,0 980,0 980,260 684,260" fill="#732424" opacity="0.7" />
-    <polygon points="418,0 586,0 494,260 326,260" fill="#050505" />
-    <polygon points="418,0 442,0 350,260 326,260" fill="#ffffff" opacity="0.92" />
-    <polygon points="442,0 458,0 366,260 350,260" fill="#d92323" />
-    <polygon points="560,0 586,0 494,260 468,260" fill="#732424" opacity="0.85" />
-    <path d="M-30 220L220 -20M728 292L1014 -22" stroke="#ffffff" stroke-width="10" opacity="0.11" />
-    <g opacity="0.95">
-      <polygon points="444,48 488,44 484,54 440,58" fill="#d92323" />
-      <polygon points="428,82 472,78 468,88 424,92" fill="#ffffff" />
-      <polygon points="414,116 458,112 454,122 410,126" fill="#d92323" />
-      <polygon points="400,150 444,146 440,156 396,160" fill="#ffffff" />
-      <polygon points="386,184 430,180 426,190 382,194" fill="#d92323" />
+    <style>text{font-family:'Arial Black',Impact,'Franklin Gothic Heavy',sans-serif;font-weight:900;font-style:italic}</style>
+    <rect width="980" height="260" fill="#0a0a0a" />
+    <polygon points="0,0 424,0 364,72 0,88" fill="#e60012" />
+    <polygon points="760,0 980,0 980,260 684,260" fill="#8a0a14" opacity="0.7" />
+    <path d="M-30 220L220 -20M728 292L1014 -22" stroke="#f2f2f2" stroke-width="10" opacity="0.11" />
+    <polygon points="458,0 530,0 454,260 382,260" fill="#0a0a0a" />
+    <polygon points="458,0 472,0 396,260 382,260" fill="#e60012" />
+    <polygon points="514,0 530,0 454,260 438,260" fill="#8a0a14" opacity="0.9" />
+    <g transform="skewX(-8)">
+      <text x="38" y="45" fill="#f2f2f2" font-size="26">PROFILE DOSSIER</text>
+      <text x="518" y="45" fill="#f2f2f2" font-size="26">LANGUAGE MIX</text>
     </g>
-    <path d="M462 20L368 250" stroke="#0d0d0d" stroke-width="7" opacity="0.85" />
-    <text x="32" y="45" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="900">PROFILE DOSSIER</text>
-    <text x="506" y="45" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="900">LANGUAGE MIX</text>
     ${dossier}
-    <rect x="506" y="88" width="420" height="18" fill="#111111" stroke="#732424" stroke-width="2" />
+    <rect x="506" y="88" width="420" height="18" fill="#111111" stroke="#8a0a14" stroke-width="2" />
     ${segments}
     ${languageChips || `<text x="506" y="144" fill="#7b7b7b" font-family="Arial, sans-serif" font-size="14">No language data found.</text>`}
+    <g transform="translate(456,130)">
+      <g>
+        <animateTransform attributeName="transform" attributeType="XML" type="scale" values="0.95;1.05;0.95" dur="3.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" />
+        <polygon points="0,-38 6.1,-14.7 26.9,-26.9 14.7,-6.1 38,0 14.7,6.1 26.9,26.9 6.1,14.7 0,38 -6.1,14.7 -26.9,26.9 -14.7,6.1 -38,0 -14.7,-6.1 -26.9,-26.9 -6.1,-14.7" fill="#e60012" stroke="#f2f2f2" stroke-width="4" />
+        <line x1="-15" y1="-15" x2="15" y2="15" stroke="#f2f2f2" stroke-width="10" stroke-linecap="round" />
+        <line x1="-15" y1="15" x2="15" y2="-15" stroke="#f2f2f2" stroke-width="10" stroke-linecap="round" />
+      </g>
+    </g>
   </svg>`;
 }
 

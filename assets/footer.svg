@@ -51,10 +51,12 @@
     <animateTransform attributeName="transform" attributeType="XML" type="translate"
       values="0,82;0,-8;0,0" keyTimes="0;0.82;1" dur="0.75s"
       calcMode="spline" keySplines="0.12 0.82 0.2 1;0.5 0 0.3 1" fill="freeze" />
-    <text x="106" y="122" fill="#f2f2f2" filter="url(#hs)" font-family="'PingFang SC','Microsoft YaHei','Source Han Sans SC','Noto Sans CJK SC',sans-serif" font-size="66" font-weight="800" letter-spacing="6">未完待续</text>
-    <text x="112" y="172" fill="#ffd400" font-family="'Arial Black',Impact,sans-serif" font-size="26" font-weight="900" letter-spacing="3">TO BE CONTINUED...
-      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
-    </text>
+    <g transform="rotate(-2.3 320 128)">
+      <text x="106" y="114" fill="#f2f2f2" filter="url(#hs)" font-family="'PingFang SC','Microsoft YaHei','Source Han Sans SC','Noto Sans CJK SC',sans-serif" font-size="66" font-weight="800" font-style="italic" letter-spacing="6">未完待续</text>
+      <text x="112" y="164" fill="#ffd400" font-family="'Arial Black',Impact,sans-serif" font-size="26" font-weight="900" font-style="italic" letter-spacing="3">TO BE CONTINUED...
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+      </text>
+    </g>
   </g>
 
   <!-- 右下签名 -->

@@ -14,6 +14,13 @@
     <filter id="hs2" x="-20%" y="-20%" width="140%" height="155%">
       <feDropShadow dx="6" dy="6" stdDeviation="0" flood-color="#0a0a0a" flood-opacity="1" />
     </filter>
+    <style>
+      .p5-heavy {
+        font-family: 'Arial Black', Impact, 'Franklin Gothic Heavy', sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+    </style>
   </defs>
 
   <!-- 背景 -->
@@ -54,16 +61,7 @@
   <path d="M-40 250L360 -30 M150 380L470 -10" stroke="#f2f2f2" stroke-width="9" opacity="0.15" />
   <path d="M812 384L1120 -24" stroke="#f2f2f2" stroke-width="9" opacity="0.13" />
 
-  <!-- 爆炸星（白，脉冲） -->
-  <g transform="translate(1158,64)">
-    <g>
-      <animateTransform attributeName="transform" attributeType="XML" type="scale"
-        values="0.9;1.08;0.9" dur="2.6s" repeatCount="indefinite"
-        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" />
-      <polygon points="0,-40 6.4,-15.5 28.3,-28.3 15.5,-6.4 40,0 15.5,6.4 28.3,28.3 6.4,15.5 0,40 -6.4,15.5 -28.3,28.3 -15.5,6.4 -40,0 -15.5,-6.4 -28.3,-28.3 -6.4,-15.5" fill="#f2f2f2" />
-    </g>
-  </g>
-  <!-- 小爆炸星（红，错相脉冲） -->
+  <!-- 爆炸星（红，右下角点缀，错相脉冲） -->
   <g transform="translate(1186,256)">
     <g>
       <animateTransform attributeName="transform" attributeType="XML" type="scale"
@@ -79,7 +77,11 @@
       values="-900,0;16,0;0,0" keyTimes="0;0.82;1" dur="0.8s"
       calcMode="spline" keySplines="0.12 0.82 0.2 1;0.5 0 0.3 1" fill="freeze" />
     <polygon points="68,54 566,36 548,158 50,178" fill="#f2f2f2" filter="url(#hs)" />
-    <text x="94" y="132" fill="#0a0a0a" font-family="'Arial Black',Impact,'Franklin Gothic Heavy',sans-serif" font-size="84" font-weight="900" letter-spacing="2">AO-CHII</text>
+    <g transform="rotate(-2.3 306 110)">
+      <text x="104" y="140" fill="#e60012" class="p5-heavy" font-size="84" letter-spacing="2">AO-CHII</text>
+      <path d="M102 151L480 151" stroke="#e60012" stroke-width="8" stroke-linecap="square" />
+      <text x="94" y="132" fill="#0a0a0a" class="p5-heavy" font-size="84" letter-spacing="2">AO-CHII</text>
+    </g>
   </g>
 
   <!-- 身份条（红底白字，从左滑入） -->
@@ -88,25 +90,48 @@
       values="-900,0;0,0" keyTimes="0;1" dur="0.85s"
       calcMode="spline" keySplines="0.16 0.78 0.24 1" fill="freeze" />
     <polygon points="58,214 706,194 690,272 42,292" fill="#e60012" filter="url(#hs2)" />
-    <text x="78" y="258" fill="#f2f2f2" font-family="'Arial Black',Impact,'Franklin Gothic Heavy',sans-serif" font-size="27" font-weight="900" letter-spacing="1">MODELS / VISION / AGENTS / TOOLS</text>
+    <g transform="rotate(-1.8 374 242)">
+      <text x="84" y="262" fill="#0a0a0a" class="p5-heavy" font-size="27" letter-spacing="1" opacity="0.42">MODELS / VISION / AGENTS / TOOLS</text>
+      <text x="78" y="258" fill="#f2f2f2" class="p5-heavy" font-size="27" letter-spacing="1">MODELS / VISION / AGENTS / TOOLS</text>
+    </g>
   </g>
 
-  <!-- 右侧工程标签（红底白字，从右砸入带回弹） -->
+  <!-- 右侧 SE ╳ AI 复合牌 -->
+  <!-- SE 块（白底黑字，从上砸入带回弹） -->
   <g>
     <animateTransform attributeName="transform" attributeType="XML" type="translate"
-      values="900,0;-16,0;0,0" keyTimes="0;0.82;1" dur="0.8s"
+      values="0,-340;0,14;0,0" keyTimes="0;0.82;1" dur="0.7s"
       calcMode="spline" keySplines="0.12 0.82 0.2 1;0.5 0 0.3 1" fill="freeze" />
-    <polygon points="780,58 1148,40 1130,128 762,146" fill="#e60012" filter="url(#hs)" />
-    <text x="910" y="118" fill="#f2f2f2" font-family="'Arial Black',Impact,'Franklin Gothic Heavy',sans-serif" font-size="62" font-weight="900" letter-spacing="3">SE</text>
+    <polygon points="770,90 948,80 936,166 758,176" fill="#f2f2f2" filter="url(#hs)" />
+    <g transform="rotate(-3.1 854 128)">
+      <text x="796" y="157" fill="#e60012" class="p5-heavy" font-size="56" letter-spacing="2">SE</text>
+      <text x="788" y="152" fill="#0a0a0a" class="p5-heavy" font-size="56" letter-spacing="2">SE</text>
+    </g>
   </g>
-
-  <!-- 右侧 AI 标签（黑底白边，从右滑入） -->
+  <!-- AI 块（黑底白字白边，从右弹入） -->
   <g>
     <animateTransform attributeName="transform" attributeType="XML" type="translate"
-      values="900,0;0,0" keyTimes="0;1" dur="0.9s"
+      values="360,0;0,0" keyTimes="0;1" dur="0.95s"
       calcMode="spline" keySplines="0.16 0.78 0.24 1" fill="freeze" />
-    <polygon points="828,236 1086,220 1072,288 814,304" fill="#0a0a0a" stroke="#f2f2f2" stroke-width="4" />
-    <text x="898" y="282" fill="#f2f2f2" font-family="'Arial Black',Impact,sans-serif" font-size="58" font-weight="900" letter-spacing="3">AI</text>
+    <polygon points="968,80 1152,70 1140,156 956,166" fill="#0a0a0a" stroke="#f2f2f2" stroke-width="4" filter="url(#hs)" />
+    <g transform="rotate(-3.1 1054 118)">
+      <text x="1014" y="148" fill="#e60012" class="p5-heavy" font-size="56" letter-spacing="2">AI</text>
+      <text x="1006" y="142" fill="#f2f2f2" class="p5-heavy" font-size="56" letter-spacing="2">AI</text>
+    </g>
+  </g>
+  <!-- 红星 ╳ 连接符（咬住接缝，撞击炸开） -->
+  <g opacity="0">
+    <animate attributeName="opacity" to="1" begin="0.5s" dur="0.01s" fill="freeze" />
+    <g transform="translate(958,123)">
+      <g>
+        <animateTransform attributeName="transform" attributeType="XML" type="scale"
+          values="0;1.22;0.92;1" keyTimes="0;0.6;0.82;1" dur="0.5s" begin="0.5s"
+          calcMode="spline" keySplines="0.2 0.9 0.3 1;0.5 0 0.5 1;0.5 0 0.5 1" fill="freeze" />
+        <polygon points="0,-52 8.3,-20.2 36.8,-36.8 20.2,-8.3 52,0 20.2,8.3 36.8,36.8 8.3,20.2 0,52 -8.3,20.2 -36.8,36.8 -20.2,8.3 -52,0 -20.2,-8.3 -36.8,-36.8 -8.3,-20.2" fill="#e60012" stroke="#f2f2f2" stroke-width="5" />
+        <line x1="-22" y1="-22" x2="22" y2="22" stroke="#f2f2f2" stroke-width="14" stroke-linecap="round" />
+        <line x1="-22" y1="22" x2="22" y2="-22" stroke="#f2f2f2" stroke-width="14" stroke-linecap="round" />
+      </g>
+    </g>
   </g>
 
   <!-- 扫描线（循环上下移动） -->
