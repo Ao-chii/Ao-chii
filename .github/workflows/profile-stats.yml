@@ -1,0 +1,46 @@
+name: Update Profile Stats
+
+on:
+  schedule:
+    - cron: "37 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate profile stats
+        run: node .github/scripts/generate-profile-stats.js
+        env:
+          PROFILE_OWNER: ${{ github.repository_owner }}
+          PROFILE_STATS_OUT_DIR: assets
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Commit updated profile stats
+        run: |
+          if git diff --quiet -- assets/profile-stats.svg assets/profile-langs.svg assets/profile-dashboard.svg; then
+            echo "No profile stats changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile-stats.svg assets/profile-langs.svg assets/profile-dashboard.svg
+          git commit -m "Update profile stats snapshot"
+          git push
