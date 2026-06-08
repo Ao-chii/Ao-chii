@@ -10,7 +10,7 @@
     <g transform="translate(34,78)">
       <polygon points="0,0 190,-6 181,46 -8,52" fill="#111111" stroke="#732424" stroke-width="2" />
       <text x="12" y="18" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="11" font-weight="900">PUBLIC REPOS</text>
-      <text x="12" y="41" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="24" font-weight="900">10</text>
+      <text x="12" y="41" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="24" font-weight="900">11</text>
     </g>
     
     <g transform="translate(270,78)">
@@ -22,12 +22,12 @@
     <g transform="translate(34,136)">
       <polygon points="0,0 190,-6 181,46 -8,52" fill="#111111" stroke="#732424" stroke-width="2" />
       <text x="12" y="18" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="11" font-weight="900">ACTIVE 12M</text>
-      <text x="12" y="41" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="24" font-weight="900">9</text>
+      <text x="12" y="41" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="24" font-weight="900">10</text>
     </g>
     
     <g transform="translate(270,136)">
       <polygon points="0,0 190,-6 181,46 -8,52" fill="#111111" stroke="#732424" stroke-width="2" />
       <text x="12" y="18" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="11" font-weight="900">TOP LANG</text>
-      <text x="12" y="41" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="24" font-weight="900">PYTHON</text>
+      <text x="12" y="41" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="24" font-weight="900">C#</text>
     </g>
   </svg>
