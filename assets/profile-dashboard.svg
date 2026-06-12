@@ -35,31 +35,31 @@
       <text x="12" y="43" fill="#f2f2f2" font-family="Arial Black, Impact, sans-serif" font-size="25" font-weight="900">C#</text>
     </g>
     <rect x="506" y="88" width="420" height="18" fill="#111111" stroke="#8a0a14" stroke-width="2" />
-    <rect x="506.0" y="88" width="202.1" height="18" fill="#e60012" /><rect x="708.1" y="88" width="116.7" height="18" fill="#f2f2f2" /><rect x="824.8" y="88" width="68.1" height="18" fill="#8a0a14" /><rect x="892.9" y="88" width="19.0" height="18" fill="#7b7b7b" /><rect x="911.9" y="88" width="14.1" height="18" fill="#ff5555" />
+    <rect x="506.0" y="88" width="196.8" height="18" fill="#e60012" /><rect x="702.8" y="88" width="124.7" height="18" fill="#f2f2f2" /><rect x="827.5" y="88" width="66.3" height="18" fill="#8a0a14" /><rect x="893.7" y="88" width="18.5" height="18" fill="#7b7b7b" /><rect x="912.3" y="88" width="13.7" height="18" fill="#ff5555" />
     
     <g transform="translate(506,120)">
       <polygon points="0,0 420,-6 412,32 -8,38" fill="#151515" stroke="#8a0a14" stroke-width="2" />
       <rect x="14" y="10" width="13" height="13" fill="#e60012" stroke="#e60012" stroke-width="1.5" />
       <text x="38" y="24" fill="#f2f2f2" font-family="Arial Black, Impact, sans-serif" font-size="19" font-weight="900">C#</text>
-      <text x="400" y="24" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="16" font-weight="900" text-anchor="end">48.1%</text>
+      <text x="400" y="24" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="16" font-weight="900" text-anchor="end">46.9%</text>
     </g>
     <g transform="translate(506,166)">
       <polygon points="0,0 202,-6 194,32 -8,38" fill="#111111" stroke="#8a0a14" stroke-width="2" />
       <rect x="14" y="9" width="10" height="10" fill="#f2f2f2" stroke="#f2f2f2" stroke-width="1.5" />
       <text x="31" y="21" fill="#f2f2f2" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">PYTHON</text>
-      <text x="182" y="21" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">27.8%</text>
+      <text x="182" y="21" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">29.7%</text>
     </g>
     <g transform="translate(721,166)">
       <polygon points="0,0 202,-6 194,32 -8,38" fill="#111111" stroke="#8a0a14" stroke-width="2" />
       <rect x="14" y="9" width="10" height="10" fill="#8a0a14" stroke="#8a0a14" stroke-width="1.5" />
       <text x="31" y="21" fill="#f2f2f2" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">VUE</text>
-      <text x="182" y="21" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">16.2%</text>
+      <text x="182" y="21" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">15.8%</text>
     </g>
     <g transform="translate(506,208)">
       <polygon points="0,0 202,-6 194,32 -8,38" fill="#111111" stroke="#8a0a14" stroke-width="2" />
       <rect x="14" y="9" width="10" height="10" fill="#7b7b7b" stroke="#7b7b7b" stroke-width="1.5" />
       <text x="31" y="21" fill="#f2f2f2" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">JAVA</text>
-      <text x="182" y="21" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">4.5%</text>
+      <text x="182" y="21" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">4.4%</text>
     </g>
     <g transform="translate(721,208)">
       <polygon points="0,0 202,-6 194,32 -8,38" fill="#111111" stroke="#8a0a14" stroke-width="2" />
