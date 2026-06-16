@@ -7,36 +7,36 @@
     <path d="M-20 160L190 -20M390 214L520 20" stroke="#ffffff" stroke-width="8" opacity="0.11" />
     <text x="24" y="38" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="24" font-weight="900">LANGUAGE MIX</text>
     <rect x="32" y="66" width="431" height="15" fill="#111111" stroke="#732424" stroke-width="2" />
-    <rect x="32.0" y="66" width="184.2" height="15" fill="#d92323" /><rect x="216.2" y="66" width="140.1" height="15" fill="#ffffff" /><rect x="356.3" y="66" width="70.9" height="15" fill="#732424" /><rect x="427.2" y="66" width="17.3" height="15" fill="#7b7b7b" /><rect x="444.5" y="66" width="18.5" height="15" fill="#ff5555" />
+    <rect x="32.0" y="66" width="179.6" height="15" fill="#d92323" /><rect x="211.6" y="66" width="139.4" height="15" fill="#ffffff" /><rect x="350.9" y="66" width="74.5" height="15" fill="#732424" /><rect x="425.5" y="66" width="16.9" height="15" fill="#7b7b7b" /><rect x="442.4" y="66" width="20.6" height="15" fill="#ff5555" />
     
     <g transform="translate(34,96)">
       <polygon points="0,0 200,-5 194,26 -6,31" fill="#111111" stroke="#732424" stroke-width="2" />
       <rect x="12" y="8" width="10" height="10" fill="#d92323" stroke="#d92323" stroke-width="1.5" />
       <text x="32" y="19" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">C#</text>
-      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">42.7%</text>
+      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">41.7%</text>
     </g>
     <g transform="translate(260,96)">
       <polygon points="0,0 200,-5 194,26 -6,31" fill="#111111" stroke="#732424" stroke-width="2" />
       <rect x="12" y="8" width="10" height="10" fill="#ffffff" stroke="#7b7b7b" stroke-width="1.5" />
       <text x="32" y="19" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">PYTHON</text>
-      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">32.5%</text>
+      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">32.3%</text>
     </g>
     <g transform="translate(34,128)">
       <polygon points="0,0 200,-5 194,26 -6,31" fill="#111111" stroke="#732424" stroke-width="2" />
       <rect x="12" y="8" width="10" height="10" fill="#732424" stroke="#732424" stroke-width="1.5" />
       <text x="32" y="19" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">VUE</text>
-      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">16.4%</text>
+      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">17.3%</text>
     </g>
     <g transform="translate(260,128)">
       <polygon points="0,0 200,-5 194,26 -6,31" fill="#111111" stroke="#732424" stroke-width="2" />
       <rect x="12" y="8" width="10" height="10" fill="#7b7b7b" stroke="#7b7b7b" stroke-width="1.5" />
       <text x="32" y="19" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">JAVA</text>
-      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">4.0%</text>
+      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">3.9%</text>
     </g>
     <g transform="translate(34,160)">
       <polygon points="0,0 200,-5 194,26 -6,31" fill="#111111" stroke="#732424" stroke-width="2" />
       <rect x="12" y="8" width="10" height="10" fill="#ff5555" stroke="#ff5555" stroke-width="1.5" />
       <text x="32" y="19" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="13" font-weight="900">OTHER</text>
-      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">4.3%</text>
+      <text x="178" y="19" fill="#7b7b7b" font-family="Arial Black, Impact, sans-serif" font-size="12" font-weight="900" text-anchor="end">4.8%</text>
     </g>
   </svg>
