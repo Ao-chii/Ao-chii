@@ -73,8 +73,8 @@
 </p>
 
 <p align="center">
-  <a href="mailto:2543327978@qq.com">
-    <img alt="Email" src="https://img.shields.io/badge/Email-2543327978%40qq.com-0A0A0A?style=for-the-badge&logo=gmail&logoColor=F2F2F2&labelColor=E60012" />
+  <a href="mailto:xiaohj1230@foxmail.com">
+    <img alt="Email" src="https://img.shields.io/badge/Email-xiaohj1230@foxmail.com-0A0A0A?style=for-the-badge&logo=gmail&logoColor=F2F2F2&labelColor=E60012" />
   </a>
   <a href="https://github.com/Ao-chii">
     <img alt="GitHub" src="https://img.shields.io/badge/GitHub-Ao--chii-0A0A0A?style=for-the-badge&logo=github&logoColor=F2F2F2&labelColor=E60012" />
