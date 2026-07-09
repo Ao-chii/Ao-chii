@@ -7,7 +7,7 @@
     <path d="M-20 160L190 -20M390 214L520 20" stroke="#ffffff" stroke-width="8" opacity="0.11" />
     <text x="24" y="38" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="24" font-weight="900">LANGUAGE MIX</text>
     <rect x="32" y="66" width="431" height="15" fill="#111111" stroke="#732424" stroke-width="2" />
-    <rect x="32.0" y="66" width="142.2" height="15" fill="#d92323" /><rect x="174.2" y="66" width="120.9" height="15" fill="#ffffff" /><rect x="295.1" y="66" width="59.4" height="15" fill="#732424" /><rect x="354.4" y="66" width="39.4" height="15" fill="#7b7b7b" /><rect x="393.8" y="66" width="69.2" height="15" fill="#ff5555" />
+    <rect x="32.0" y="66" width="142.1" height="15" fill="#d92323" /><rect x="174.1" y="66" width="120.9" height="15" fill="#ffffff" /><rect x="295.0" y="66" width="59.3" height="15" fill="#732424" /><rect x="354.4" y="66" width="39.3" height="15" fill="#7b7b7b" /><rect x="393.7" y="66" width="69.3" height="15" fill="#ff5555" />
     
     <g transform="translate(34,96)">
       <polygon points="0,0 200,-5 194,26 -6,31" fill="#111111" stroke="#732424" stroke-width="2" />
